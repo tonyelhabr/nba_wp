@@ -32,7 +32,7 @@ games are not quite as “representative”.)
 
 Next, I did a relatively quick “literature review” to identify model
 frameworks that might be worth trying and features I might want to
-investigate.[1] From what I can tell, there are two pretty well-known
+investigate. From what I can tell, there are two pretty well-known
 public NBA win probability models:
 
 1.  [inpredictable (Mike
@@ -53,7 +53,9 @@ I’m also aware of two other win probabilities models for basketball.
 
 ### Methodology
 
-I chose to adopt Benz’s model 0 approach. [2][3]
+I chose to adopt Benz’s model 0 approach.[^1]
+
+[^1]: This is also similar to Mike Beouy's win probability model. Beouy's also accounts for possession, which can be helpful for distinguishing slight changes in win probability when there are consecutive possessions where there is no scoring.
 
 1.  **It is relatively straightforward.** In particular, it doesn’t
     require me to parse out things like fouls and timeouts, which
@@ -101,7 +103,9 @@ features to account for these things.
 Due to the nature of the model, there isn’t a single model formula that
 I can point to and use to explain the model directly. Nonetheless, the following shows how the weights for
 the explicit features for score differential and pre-game spread vary
-across the game. [4]
+across the game.[^2]
+
+[^2]: This is inspired by Figure 3.1 in Benz's paper.
 
 ![](coefs.png)
 
@@ -122,9 +126,11 @@ mostly looking to see that the numbers are similar across the two sets.
 # 2 test    82882 0.456 0.150         0.216
 ```
 
-My log loss is higher (“worse”) than what Benz shows.[5] Among other
+My log loss is higher (“worse”) than what Benz shows.[^3] Among other
 things, my higher log loss could be due to less training data and higher
 parity in the NBA (relative to college basketball).
+
+[^3]: See model 0, span=0.5, in Benz' Figure 3.3.
 
 That’s great and all, but we should check how these vary over the course
 of a game.
