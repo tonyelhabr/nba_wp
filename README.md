@@ -143,7 +143,7 @@ information about the nature of the game. This matches what we should
 have expected.
 
 There are more ways to do calibration analysis, such as measuring
-“observed” vs. estimated win probability. [as
+“observed” vs. estimated win probability, [as
 so](https://statsbylopez.files.wordpress.com/2017/03/locknett.png?w=569&h=563).
 However, for the sake of not spending a ton of time on this project, I did not do that.
 
