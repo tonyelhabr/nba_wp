@@ -2,12 +2,12 @@
 
 ## Repo
 
-- main.R: Code for the data collection, model creation, model evaluation, and visualization.
-- pbp.parquet: data used for model
-- coefs.csv and coefs.png: logistic regression coefficients fed into LOESS model
-- error_over_time.png: test set evaluation metrics for the win probability model
-- win_prob_example.png: visualization of my win probability for game 3 of the Bucks-Hawks Eastern Conference Finals matchup in the 2020/21 season
-- png files in extra/ sub-directory: screenshots of the win probaility models from ESPN, inpredictable, and gambletron2000 for the same game.
+- `main.R`: Code for the data collection, model creation, model evaluation, and visualization.
+- `pbp.parquet`: data used for model (exported from `main.R`)
+- `coefs.csv` and `coefs.png`: logistic regression coefficients fed into LOESS model
+- `error_over_time.png`: test set evaluation metrics for the win probability model
+- `win_prob_example.png`: visualization of my win probability for game 3 of the Bucks-Hawks Eastern Conference Finals matchup in the 2020/21 season
+- png files in `extra/` sub-directory: screenshots of the win probaility models from ESPN, inpredictable, and gambletron2000 for the same game.
 
 ## Introduction
 
